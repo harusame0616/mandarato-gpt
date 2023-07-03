@@ -6,11 +6,23 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint:script": "eslint --ext .js,.vue,.ts --ignore-path .gitignore ."
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxt/eslint-config": "^0.1.1",
     "@types/node": "^18",
-    "nuxt": "^3.6.1"
+    "eslint": "^8.44.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
+    "nuxt": "^3.6.1",
+    "prettier": "^2.8.8"
+  },
+  "resolutions": {
+    "//": "eslint で ~ などのエイリアスでエラーが出るため修正後のバージョンを使用する",
+    "get-tsconfig": "4.6.2"
   }
 }
