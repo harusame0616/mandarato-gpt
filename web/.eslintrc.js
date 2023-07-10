@@ -7,12 +7,17 @@ module.exports = {
   extends: ["airbnb-base", "@nuxt/eslint-config", "prettier"],
   overrides: [],
   plugins: [],
-  rules: {},
+  rules: {
+    "import/no-anonymous-default-export": "error",
+    "import/prefer-default-export": "off",
+    "no-useless-constructor": "off",
+    "no-empty-function": ["error", { allow: ["constructors"] }],
+  },
   settings: {
     "import/resolver": {
       typescript: {
         alwaysTryTypes: true,
-        project: "./",
+        project: ["tsconfig.json"],
       },
     },
   },
