@@ -1,0 +1,2 @@
+# please rename this file to .env
+NUXT_OPEN_AI_API_KEY=
