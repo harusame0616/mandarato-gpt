@@ -1,9 +1,5 @@
 <template>
-  <div class="h-full flex flex-col">
-    <PageHeader />
-    <main class="flex-grow">
-      <NuxtPage />
-    </main>
-    <PageFooter />
+  <div>
+    <NuxtWelcome />
   </div>
 </template>

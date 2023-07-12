@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   alias: {
     "@Domains/*": "../domains/*",
   },
-  css: ["~/assets/css/tailwind.css", "~/assets/css/base.css"],
+  css: ["~/assets/css/tailwind.css"],
   postcss: {
     plugins: {
       tailwindcss: {},
