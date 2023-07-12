@@ -6,7 +6,7 @@ export default defineEventHandler(async (event) => {
   const { openAiApiKey } = useRuntimeConfig();
 
   if (
-    mainText == undefined ||
+    mainText === undefined ||
     typeof mainText !== "string" ||
     mainText.length === 0 ||
     mainText.length > 50
