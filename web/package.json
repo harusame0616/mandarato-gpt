@@ -8,7 +8,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint:script": "eslint --ext .js,.vue,.ts --ignore-path .gitignore .",
-    "lint:format": "prettier --check ./**/*.{js,vue,ts}"
+    "lint:format": "prettier --check ./**/*.{js,vue,ts}",
+    "typecheck": "nuxi typecheck"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",

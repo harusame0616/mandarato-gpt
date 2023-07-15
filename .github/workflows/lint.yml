@@ -25,4 +25,4 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: execute
         working-directory: web
-        run: yarn lint:script && yarn lint:format
+        run: yarn lint:script && yarn lint:format && yarn typecheck
