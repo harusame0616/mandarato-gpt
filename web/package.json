@@ -8,7 +8,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint:script": "eslint --ext .js,.vue,.ts --ignore-path .gitignore .",
-    "lint:format": "prettier --check ./**/*.{js,vue,ts}"
+    "lint:format": "prettier --check ./**/*.{js,vue,ts}",
+    "typecheck": "nuxi typecheck"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
@@ -23,7 +24,9 @@
     "nuxt": "^3.6.1",
     "postcss": "^8.4.24",
     "prettier": "^2.8.8",
-    "tailwindcss": "^3.3.2"
+    "tailwindcss": "^3.3.2",
+    "typescript": "^5.1.6",
+    "vue-tsc": "^1.8.5"
   },
   "resolutions": {
     "//": "eslint で ~ などのエイリアスでエラーが出るため修正後のバージョンを使用する",
