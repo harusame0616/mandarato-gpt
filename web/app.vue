@@ -1,9 +1,12 @@
 <template>
   <div class="h-full flex flex-col">
     <PageHeader />
-    <main class="flex-grow">
-      <NuxtPage />
-    </main>
+    <layoutSpacer class="w-full" />
+    <LayoutBox class="flex-grow flex justify-center flex-wrap">
+      <main class="max-w-2xl w-full">
+        <NuxtPage />
+      </main>
+    </LayoutBox>
     <PageFooter />
   </div>
 </template>
