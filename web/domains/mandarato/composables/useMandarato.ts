@@ -65,6 +65,7 @@ export const useMandarato = () => {
       }
     } catch (e) {
       // TODO: エラー処理
+      // eslint-disable-next-line no-console
       console.warn({ e });
     }
     pending.value = false;
