@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useMandarato } from "~/domains/mandarato/composables/useMandarato.ts";
-import Mandarato from "~/domains/mandarato/components/Mandarato.vue";
+import MandaratoEdit from "~/domains/mandarato/components/MandaratoEdit.vue";
 import { RelationIndexType } from "~/domains/mandarato/models/mandarato.ts";
 
 const {
@@ -29,7 +29,7 @@ const changeRelation = (index: RelationIndexType, text: string) => {
   <div>
     <BaseTitle :level="1">マンダラート作成</BaseTitle>
     <LayoutSpacer large />
-    <Mandarato
+    <MandaratoEdit
       :mandarato="mandarato"
       :current="current"
       :disabled="pending"
