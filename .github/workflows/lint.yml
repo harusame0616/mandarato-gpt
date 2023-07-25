@@ -21,8 +21,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
       - name: Install dependency
-        working-directory: web
         run: yarn install --frozen-lockfile
       - name: execute
-        working-directory: web
-        run: yarn lint:script && yarn lint:format && yarn typecheck
+        run: |
+          yarn workspace web lint:script &&
+          yarn workspace web lint:format &&
+          yarn workspace web typecheck &&
+          yarn workspace api lint:script &&
+          yarn workspace api lint:format
