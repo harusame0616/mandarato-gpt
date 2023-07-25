@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+  web:
+    container_name: mandarato-web
+    build:
+      dockerfile: ./web/dockerfile.yml
+    ports:
+      - 61000:3000
