@@ -1,6 +1,12 @@
 version: "3.7"
 
 services:
+  api:
+    container_name: mandarato-api
+    build:
+      dockerfile: ./api/dockerfile.yml
+    ports:
+      - 61001:3000
   web:
     container_name: mandarato-web
     build:

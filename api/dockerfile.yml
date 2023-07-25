@@ -5,10 +5,10 @@ ENV HOST=0.0.0.0
 WORKDIR /project/
 
 COPY package.json yarn.lock ./
-COPY web/package.json  ./web/package.json
+COPY api/package.json  ./api/package.json
 RUN yarn
 
-COPY web ./web
+COPY api ./api
 
 
-ENTRYPOINT ["yarn", "workspace", "web", "dev"]
+ENTRYPOINT ["yarn", "workspace", "api", "start:dev"]
