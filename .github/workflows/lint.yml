@@ -27,4 +27,5 @@ jobs:
           yarn workspace web lint:script &&
           yarn workspace web lint:format &&
           yarn workspace web typecheck &&
-          yarn workspace api lint
+          yarn workspace api lint:script &&
+          yarn workspace api lint:format
