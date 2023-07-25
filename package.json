@@ -5,5 +5,9 @@
   "repository": "https://github.com/harusame0616/mandarato-gpt",
   "author": "Nemoto Masaharu <nemoto.masaharu.it@gmail.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "workspaces": [
+    "web",
+    "api"
+  ]
 }
