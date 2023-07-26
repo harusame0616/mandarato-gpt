@@ -1,0 +1,14 @@
+FROM node:18.17.0-alpine3.18
+
+ENV HOST=0.0.0.0
+
+WORKDIR /project/
+
+COPY package.json yarn.lock ./
+COPY web/package.json  ./web/package.json
+RUN yarn
+
+COPY web ./web
+
+
+ENTRYPOINT ["yarn", "workspace", "web", "dev"]

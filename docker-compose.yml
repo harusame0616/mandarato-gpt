@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  db:
+    image: mysql:8.0.34
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+  api:
+    container_name: mandarato-api
+    build:
+      dockerfile: ./api/dockerfile.yml
+    ports:
+      - 61001:3000
+  web:
+    container_name: mandarato-web
+    build:
+      dockerfile: ./web/dockerfile.yml
+    ports:
+      - 61000:3000
