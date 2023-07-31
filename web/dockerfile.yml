@@ -10,5 +10,5 @@ RUN yarn
 
 COPY web ./web
 
-
+WORKDIR /project/api
 ENTRYPOINT ["yarn", "workspace", "web", "dev"]
