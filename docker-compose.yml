@@ -9,11 +9,15 @@ services:
     container_name: mandarato-api
     build:
       dockerfile: ./api/dockerfile.yml
+    volumes:
+      - ./:/project
     ports:
       - 61001:3000
   web:
     container_name: mandarato-web
     build:
       dockerfile: ./web/dockerfile.yml
+    volumes:
+      - ./:/project
     ports:
       - 61000:3000
