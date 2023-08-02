@@ -1,0 +1,8 @@
+type Mandarato {
+  id: String!
+}
+
+type Query {
+  mandaratoFindOneById(id: String!): Mandarato!
+  mandaratoList: [Mandarato!]!
+}
